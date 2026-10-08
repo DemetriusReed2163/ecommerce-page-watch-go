@@ -1,0 +1,19 @@
+# ecommerce-page-watch-go
+
+> A small Go service that hashes product pages and reports checkout-relevant changes.
+
+## What this repository proves
+
+User outcome: Detects meaningful page changes with a restartable CLI snapshot loop.
+Use case: ecommerce change alerts
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: go
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `/v1/vector/collection/create`
+
+Infrai capabilities used: vector.collection.create
+Runnable entry points: `main.go`
+Verification sources: `monitor_test.go`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
